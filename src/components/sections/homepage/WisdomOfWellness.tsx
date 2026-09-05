@@ -189,14 +189,14 @@ function JourneyTextReveal({ step, index, scrollYProgress }: { step: any, index:
   const window = 0.12; 
   
   // Use mathematical mapping instead of arrays to prevent WAAPI [0, 1] offset errors
-  const opacity = useTransform(scrollYProgress, (pos) => {
+  const opacity = useTransform(scrollYProgress, (pos: number) => {
     const dist = Math.abs(pos - target);
     if (dist >= window) return 0.1;
     const peak = 1 - (dist / window);
     return 0.1 + (peak * 0.9);
   });
   
-  const parallaxY = useTransform(scrollYProgress, (pos) => {
+  const parallaxY = useTransform(scrollYProgress, (pos: number) => {
     const dist = pos - target;
     const clampedDist = Math.max(-window, Math.min(window, dist));
     const factor = clampedDist / window;

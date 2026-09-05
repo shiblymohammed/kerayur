@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function ArrivalSection() {
-  const transition = { duration: 1.2, ease: [0.16, 1, 0.3, 1] };
+  const transition = { duration: 1.2, ease: [0.16, 1, 0.3, 1] as const };
 
   return (
     <section className="relative w-full h-[100vh] bg-paper text-forest border-b border-sage overflow-hidden flex items-center pt-20">
