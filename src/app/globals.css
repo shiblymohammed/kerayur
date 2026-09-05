@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  /* ─────────────────────────
+     FOUNDATION
+  ───────────────────────── */
+  --paper: #F1EDE2;
+  --paper-warm: #E9E2D2;
+  --paper-light: #F7F4EC;
+
+  /* ─────────────────────────
+     PRIMARY
+  ───────────────────────── */
+  --forest: #123C32;
+  --deep-forest: #0B2A24;
+  --moss: #526B57;
+
+  /* ─────────────────────────
+     NATURAL GREENS
+  ───────────────────────── */
+  --sage: #8D9B82;
+  --olive: #747C59;
+  --leaf: #3F654B;
+
+  /* ─────────────────────────
+     EARTH / CULTURE
+  ───────────────────────── */
+  --terracotta: #A65B43;
+  --clay: #8B5945;
+  --ochre: #B4935A;
+
+  /* ─────────────────────────
+     SOFT ACCENTS
+  ───────────────────────── */
+  --sand: #D8CBB2;
+  --stone: #B7B2A3;
+  --mist: #C8D2C9;
+
+  /* ─────────────────────────
+     TEXT
+  ───────────────────────── */
+  --ink: #102E29;
+  --ink-soft: #43504A;
+  --muted: #73766C;
+
+  /* ─────────────────────────
+     DARK SECTIONS
+  ───────────────────────── */
+  --night-green: #102E29;
+  --deep-teal: #183F3A;
+
+  /* ─────────────────────────
+     WHITE
+  ───────────────────────── */
+  --white: #FFFDF7;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-warm: var(--paper-warm);
+  --color-paper-light: var(--paper-light);
+
+  --color-forest: var(--forest);
+  --color-deep-forest: var(--deep-forest);
+
+  --color-moss: var(--moss);
+  --color-sage: var(--sage);
+  --color-olive: var(--olive);
+  --color-leaf: var(--leaf);
+
+  --color-terracotta: var(--terracotta);
+  --color-clay: var(--clay);
+  --color-ochre: var(--ochre);
+
+  --color-sand: var(--sand);
+  --color-stone: var(--stone);
+  --color-mist: var(--mist);
+
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+
+  --color-night-green: var(--night-green);
+  --color-deep-teal: var(--deep-teal);
+
+  --color-white: var(--white);
+  
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
+}
+
+body {
+  background: var(--paper);
+  color: var(--forest);
+  font-family: var(--font-sans);
+}
